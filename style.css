@@ -1,0 +1,306 @@
+/* Estilo geral */
+body {
+  background-color: #f5f5dc;
+  color: #333;
+  font-family: 'Courier New', monospace;
+  font-size: 1.25rem; /* 20px */
+  text-align: center;
+  padding: 1.25rem 1.25rem 3.75rem 1.25rem; /* 20px 20px 60px 20px */
+  font-weight: bold;
+  background-image: url("assets/textures-and-bg/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Estilos para header e títulos */
+header {
+  background-color: #F5DEB3;
+  color: #8B4513;
+  border: 0.31rem solid #8B4513; /* 5px */
+  padding: 1.25rem; /* 20px */
+  font-size: 2rem; /* 32px */
+  text-align: center;
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0rem 0.25rem 0.625rem rgba(0, 0, 0, 0.3); /* 0px 4px 10px */
+  margin: 1.25rem 3.125rem; /* 20px 50px */
+  font-family: 'Press Start 2P', monospace;
+}
+
+h1, h2 {
+  font-family: 'Press Start 2P', monospace;
+  font-weight: bold;
+  margin: 1.25rem 3.125rem; /* 20px 50px */
+  text-align: center;
+  border: none;  
+  background: none;  
+  padding: 0;
+  box-shadow: none; 
+}
+
+/* Estilos para parágrafos */
+p {
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 0.9375rem; /* 15px */
+}
+
+/* Estilos para o container da história */
+.story-box {
+  background-color: wheat;
+  padding: 1.25rem; /* 20px */
+  margin: 1.25rem auto; /* 20px */
+  max-width: 50rem; /* 800px */
+  background-image: url("assets/textures-and-bg/texture.webp");
+  background-repeat: repeat;
+  background-size: cover;
+  border: 0.125rem solid #8B4513; /* 2px */
+  border-radius: 0.9375rem; /* 15px */
+  box-shadow: 0rem 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* 0px 4px 10px */
+}
+
+.story-box p {
+  margin: 1.875rem 9.375rem; /* 30px 150px */
+}
+
+/* Estilos para botões */
+button, #search-button, .story-navigation button, #back-to-main {
+  background-color: #804000;
+  color: #fff;
+  border: none;
+  border-radius: 1.5625rem; /* 25px */
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 0.625rem 0;  /* 10px */
+}
+
+button:hover, #search-button:hover, .story-navigation button:hover, #back-to-main:hover {
+  background-color: #663300;
+}
+
+button:focus, #search-button:focus, .story-navigation button:focus, #back-to-main:focus {
+  border-color: #663300;
+  box-shadow: 0 0 0.625rem rgba(102, 51, 0, 0.5); /* 10px */
+}
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem; /* 20px */
+}
+
+#search-bar {
+  width: 18.75rem; /* 300px */
+  padding: 0.75rem 1.25rem; /* 12px 20px */
+  border-radius: 1.5625rem; /* 25px */
+  border: 0.125rem solid #8B4513; /* 2px */
+  font-size: 1rem; /* 16px */
+  outline: none;
+  transition: all 0.3s ease;
+  margin-right: 0.9375rem; /* 15px */
+}
+
+#search-bar:focus {
+  border-color: #663300;
+  box-shadow: 0 0 0.625rem rgba(102, 51, 0, 0.5); /* 10px */
+}
+
+/* Estilos para centralizar o botão de "Voltar para a página principal" */
+.back-button-container {
+  display: flex;
+  justify-content: center;  
+  margin-top: 1.25rem;  /* 20px */
+}
+
+/* Estilos para footer */
+footer {
+  background-color: #804000;
+  color: #fff;
+  padding: 0.9375rem 0; /* 15px */
+  border: 0.3125rem solid #F5DEB3; /* 5px */
+  border-radius: 0.9375rem; /* 15px */
+  margin-top: 2.5rem; /* 40px */
+  box-shadow: 0px -0.25rem 0.625rem rgba(0, 0, 0, 0.3); /* 0px -4px 10px */
+  text-align: center;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem; /* 16px */
+  margin: 0.3125rem; /* 5px */
+}
+
+/* Estilos para imagens das histórias */
+.story-image {
+  text-align: center;
+  margin-bottom: 1.25rem; /* 20px */
+  max-width: 100%;
+}
+
+.story-image img {
+  width: 60%;
+  height: auto;
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* 0 4px 8px */
+  display: block;
+  margin: 0 auto;
+}
+
+/* ==================== Media Queries ==================== */
+
+/* Dispositivos móveis menores que 480px */
+@media (max-width: 30rem) { /* 480px */
+  body {
+    font-size: 0.875rem; /* 14px */
+    padding: 0.625rem; /* 10px */
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  #search-bar {
+    width: 60%; 
+    margin-right: 0.625rem; /* 10px */
+  }
+
+  #search-button {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  header {
+    font-size: 1.25rem; /* 20px */
+    margin: 0.625rem; /* 10px */
+    padding: 0.9375rem; /* 15px */
+  }
+
+  h1, h2 {
+    font-size: 1rem; /* 16px */
+    margin: 0.625rem; /* 10px */
+    line-height: 1.2;
+  }
+
+  .story-box {
+    max-width: 95%;
+    padding: 0.9375rem; /* 15px */
+  }
+
+  button {
+    font-size: 0.875rem; /* 14px */
+    padding: 0.5rem 0.75rem; /* 8px 12px */
+  }
+
+  .story-box p {
+    margin: 0.625rem; /* 10px */
+  }
+}
+
+/* Telas entre 480px e 768px (tablets em retrato) */
+@media (min-width: 30.0625rem) and (max-width: 48rem) { /* 481px - 768px */
+  body {
+    font-size: 1rem; /* 16px */
+  }
+
+  .search-bar {
+    width: 80%;
+    margin: 0.625rem auto; /* 10px */
+  }
+
+  .story-box {
+    max-width: 90%;
+  }
+
+  header {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  h1, h2 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.2;
+  }
+
+  button {
+    font-size: 1.125rem; /* 18px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+  }
+
+  .story-box p {
+    margin: 1.25rem 3.125rem; /* 20px 50px */
+  }
+}
+
+/* Telas entre 768px e 1024px (tablets em paisagem) */
+@media (min-width: 48.0625rem) and (max-width: 64rem) { /* 769px - 1024px */
+  body {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .search-bar {
+    width: 25rem; /* 400px */
+    margin: 0 auto;
+  }
+
+  .story-box {
+    max-width: 56.25rem; /* 900px */
+  }
+
+  header {
+    font-size: 2rem; /* 32px */
+  }
+
+  h1, h2 {
+    font-size: 2rem; /* 32px */
+    line-height: 1.2;
+  }
+
+  button {
+    font-size: 1.25rem; /* 20px */
+    padding: 0.75rem 1.5rem; /* 12px 24px */
+  }
+
+  .story-box p {
+    margin: 1.875rem 6.25rem; /* 30px 100px */
+  }
+}
+
+/* Telas maiores que 1024px (desktop) */
+@media (min-width: 64.0625rem) { /* 1025px */
+  body {
+    font-size: 1.375rem; /* 22px */
+  }
+
+  .search-bar {
+    width: 31.25rem; /* 500px */
+    margin: 0 auto;
+  }
+
+  .story-box {
+    max-width: 75rem; /* 1200px */
+  }
+
+  header {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  h1, h2 {
+    font-size: 3.125rem; /* 50px */
+    line-height: 1.2;
+  }
+
+  button {
+    font-size: 1.375rem; /* 22px */
+    padding: 0.875rem 1.75rem; /* 14px 28px */
+  }
+
+  .story-box p {
+    margin: 1.875rem 9.375rem; /* 30px 150px */
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.6;
+  }
+}

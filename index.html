@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuestTales</title>
+
+  <!-- Importando os estilos -->
+  <link href="style.css" rel="stylesheet">
+  
+  <!-- Pré-conexão para otimizar fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonte personalizada -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>QuestTales</h1>
+    <h1>Aventuras de RPG</h1>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-bar">
+      <input type="text" id="search-bar" placeholder="Pesquisar histórias..." aria-label="Barra de pesquisa">
+      <button id="search-button" onclick="searchStories()">Pesquisar</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Container para as histórias -->
+    <div class="story-box" id="current-story">
+      <!-- O conteúdo da história será carregado dinamicamente aqui -->
+    </div>
+
+    <!-- Navegação entre as histórias -->
+    <div class="story-navigation">
+      <button id="previous-story" onclick="previousStory()" aria-label="História anterior">Anterior</button>
+      <button id="next-story" onclick="nextStory()" aria-label="Próxima história">Próximo</button>
+    </div>
+
+    <!-- Botão para voltar à página principal -->
+    <div id="back-button-container" class="back-button-container">
+      <button id="back-to-main" style="display: none;" onclick="resetSearch()" aria-label="Voltar para a página principal">Voltar para a página principal</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 QuestTales. Por Larissa Daitx Raupp (contato: larissadaitxraupp@gmail.com)</p>
+    <p>Todas as imagens deste site foram geradas por inteligência artificial</p>
+  </footer>
+
+  <!-- Importação dos scripts -->
+  <script type="module" src="stories.js" defer></script>
+  <script type="module" src="game.js" defer></script>
+</body>
+</html>
