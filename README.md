@@ -37,13 +37,13 @@ Você pode rodar o projeto localmente ou acessar a versão hospedada no **Vercel
 #### Opção 1: Acessar no Vercel
 O projeto também está disponível online. Você pode acessá-lo através do seguinte link:
 
-🔗 **Link para QuestTales no Vercel**
+🔗 [**Link para QuestTales no Vercel**](https://quest-tales-aventuras-de-rpg.vercel.app/)
 
 #### Opção 2: Rodar Localmente
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/QuestTales.git
+   git clone https://github.com/LariRaupp/QuestTales---Aventuras-de-RPG.git
    ```
 
 2. **Abra o projeto** no VSCode ou qualquer outro editor de sua preferência.
@@ -107,7 +107,7 @@ Além de sua aplicação no QuestTales, o modelo de pesquisa pode ser facilmente
 - **Otimização Textual**: A busca foi projetada para ser extremamente flexível:
   - **Remoção de acentos**: O jogador pode buscar por palavras sem se preocupar com acentuação.
   - **Normalização de texto**: A pesquisa considera diferentes variações ortográficas, permitindo uma experiência de busca mais inclusiva.
-  - **Casos alternados**: Não há diferença entre maiúsculas e minúsculas durante a busca.
+  - **Case insensitive**: A busca não diferencia entre letras maiúsculas e minúsculas.
 
 ### Como Funciona:
 A pesquisa percorre o arquivo `stories.js`, onde todas as histórias estão organizadas, filtrando o conteúdo de acordo com o termo inserido pelo jogador na barra de busca. Essa função é executada e retorna as histórias que correspondem ao termo pesquisado.
