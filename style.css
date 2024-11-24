@@ -136,6 +136,17 @@ footer p {
   margin: 0.3125rem; /* 5px */
 }
 
+.custom-link {
+  color: #F5DEB3; /
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+.custom-link:hover {
+  color: #EFCA86; 
+  text-decoration: none; 
+}
+
 /* Estilos para imagens das histórias */
 .story-image {
   text-align: center;
